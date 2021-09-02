@@ -1,5 +1,7 @@
-let days = 7;
+let namasteBtn = document.querySelector('button');
+namasteBtn.addEventListener('click', inputMsg);
 
-days = days + 2;
-
-console.log(days);
+function inputMsg() {
+    let name = prompt('Enter Name of Student');
+    namasteBtn.textContent = 'Roll No. 1:' + name;
+}
