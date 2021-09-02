@@ -1,0 +1,23 @@
+html {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 14px;
+}
+
+.container {
+    width: 300px;
+    height: 200px;
+    color: black;
+}
+
+.container > h1 {
+    color: gray;
+}
+
+.container > p {
+    font-size: 12px;
+    display: none;
+}

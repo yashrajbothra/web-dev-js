@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ways to Load Script</title>
+</head>
+
+<body>
+
+    <!-- Using Script tag before all Content -->
+    <script async src="before.js"></script>
+    <p>...content loaded before all scripts...</p>
+
+    <!-- Using Script tag between scripts -->
+    <script async src="between.js"></script>
+    <p>...content loaded between some scripts...</p>
+
+    <!-- Using Script tag after scripts -->
+    <script async src="after.js"></script>
+    <p>...content loaded all scripts...</p>
+
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            alert('DOM fully loaded and parsed');
+        });
+    </script>
+</body>
+
+</html>

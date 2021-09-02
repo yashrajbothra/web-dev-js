@@ -1,0 +1,3 @@
+// ...before js...
+
+alert("Script loaded before Rendering");

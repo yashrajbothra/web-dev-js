@@ -1,8 +1,5 @@
-const para = document.querySelector('button');
+let days = 7;
 
-para.addEventListener('click', updateName);
+days = days + 2;
 
-function updateName() {
-  let name = prompt('Enter Name of Student');
-  para.textContent = 'Roll No. 1: ' + name;
-}
+console.log(days);
