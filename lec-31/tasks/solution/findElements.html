@@ -1,0 +1,28 @@
+<html>
+
+<body>
+    <div>Users:</div>
+    <ul>
+        <li>Rahul</li>
+        <li>Kumar</li>
+    </ul>
+    <script>
+        // Find div in node
+        console.log(document.body.firstElementChild)
+        // or
+        console.log(document.body.children[0])
+        // or (the first node is space, so we take 2nd)
+        console.log(document.body.childNodes[1])
+
+        // Find ul in node
+        console.log(document.body.lastElementChild)
+        // or
+        console.log(document.body.children[1])
+
+        // Find li in node
+        // get <ul>, and then get its last element child
+        console.log(document.body.lastElementChild.lastElementChild)
+    </script>
+</body>
+
+</html>
